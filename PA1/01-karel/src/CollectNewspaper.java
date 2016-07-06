@@ -1,6 +1,13 @@
+
+ // Done: comment this program
+ 
 /*
- * TODO: comment this program
+ * File: CollectNewspaper.java
+ * ----------------------------
+ * Given Karel's world. 
+ * Make Karel move to the newspaper, pick it up, return to the starting point and face east. 
  */
+
 
 import stanford.karel.*;
 
@@ -12,12 +19,18 @@ public class CollectNewspaper extends SuperKarel {
 		moveToPaper();
 		
 		if (beepersPresent()){
-		pickBeeper();
+			pickBeeper();
 		}
 		
 		returnToStart();
 	}
 	
+	
+	/*
+	* Move Karel to the newspaper.
+	* Pre: Karel is at its starting point, facing east.
+	* Post: Karel is at the newspaper's position, facing east.
+	*/	
 	private void moveToPaper(){
 		move();
 		move();
@@ -27,6 +40,12 @@ public class CollectNewspaper extends SuperKarel {
 		move();
 	}
 	
+	
+	/*
+	* Move Karel back to its starting point.
+	* Pre: Karel is at newspaper's position, facing east.
+	* Post: Karel is at at its starting point, facing east.
+	*/	
 	private void returnToStart(){
 		turnAround();
 		move();

@@ -2,6 +2,13 @@
  * Done: comment this program
  */
 
+/* 
+ * File: StoneMason.java
+ * -------------------------------
+ * Filled in beepers on the (4k+1)th columns, k = 0,1,2,....
+ */
+
+
 import stanford.karel.*;
 
 public class StoneMason extends SuperKarel {
